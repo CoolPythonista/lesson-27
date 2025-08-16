@@ -4,7 +4,7 @@ print('Алиса')
 try:
     #print(2 + '3')
     print(value)
-except Exception as e:
+except (TypeError, NameError) as e:
     print(f'ВЫШЕЛ ИЗ ОШИБКИ: {e.__class__.__name__}:', e)
 
 print('Гарри')
